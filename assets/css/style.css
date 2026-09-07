@@ -530,6 +530,10 @@ main {
   box-shadow: var(--shadow-2);
   z-index: 1;
 }
+.service-item:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
 
 .service-item::before {
   content: "";
@@ -1879,4 +1883,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+/* Custom responsive improvement */
+@media (max-width: 480px) {
+  .navbar-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-link {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
